@@ -106,6 +106,12 @@ body {
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 25px;
     cursor: pointer;
+    box-shadow: 1px 5px 10px #e8e8e8;
+}
+
+.fa-mobile-alt {
+    margin-right: 28px;
+    color: #7e7e7e;
 }
 
 .fonct2 {
@@ -121,6 +127,12 @@ body {
     border-radius: 25px 25px 25px 25px;
     margin-bottom: 25px;
     cursor: pointer;
+    box-shadow: 1px 5px 10px #e8e8e8;
+}
+
+.fa-list {
+    margin-right: 24px;
+    color: #7e7e7e;
 }
 
 .fonct3 {
@@ -135,6 +147,12 @@ body {
     background: #f6f6f6;
     border-radius: 25px 25px 25px 25px;
     cursor: pointer;
+    box-shadow: 1px 5px 10px #e8e8e8;
+}
+
+.fa-store {
+    margin-right: 21px;
+    color: #7e7e7e;
 }
 
 .restaurants {
@@ -171,4 +189,12 @@ footer h4 {
 
 footer ul {
     padding: 30px 0 0 25px;
+}
+
+.fa-hands-helping {
+    font-size: 11px;
+}
+
+.fa-utensils, .fa-hands-helping {
+    margin-right: 12px;
 }
