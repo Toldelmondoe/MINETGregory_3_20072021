@@ -20,6 +20,10 @@ h2 {
     font-size: 1.5em;
 }
 
+h3 {
+    font-size: 1.1em;
+}
+
 span {
     font-size: 1em;
 }
@@ -88,6 +92,10 @@ span {
     flex-wrap: wrap;
     max-width: 100%;
     text-align: center;
+}
+
+.fonct li {
+    font-weight: bolder;
 }
 
 .fonct1 {
@@ -193,6 +201,7 @@ span {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: 1px 3px 10px #e5e5e5;
 }
 
 .restaurants .restaurant {
