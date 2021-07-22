@@ -124,7 +124,7 @@ span {
 }
 
 .entete p {
-  margin: 1rem 0 2rem 0;
+  margin: 16px 0 32px 0;
 }
 
 .button {
@@ -136,6 +136,14 @@ span {
   cursor: pointer;
   border: 1px solid transparent;
   background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
+  -webkit-box-shadow: 1px 1px 5px #979393;
+          box-shadow: 1px 1px 5px #979393;
+}
+
+.button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 3px 5px #979393;
+          box-shadow: 1px 3px 5px #979393;
 }
 
 .fonctionnement {
@@ -380,5 +388,10 @@ footer li {
 
 .fa-utensils, .fa-hands-helping {
   margin-right: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
