@@ -1,5 +1,9 @@
 @import "libs/reset.scss";
 
+$clr-primary: #9356DC;
+$clr-Secondary: #FF79DA;
+$clr-tertiary: #99E2D0;
+
 h1, h2, h3, h5, h6, p, a, i, li, strong, span {
     font-family: "Roboto"
 }
@@ -72,6 +76,17 @@ span {
     margin: 1rem 0 2rem 0;
 }
 
+.button {
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    padding: 15px 15px;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: linear-gradient(170deg, $clr-Secondary 4%, $clr-primary 100%);
+}
+
 .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -124,7 +139,7 @@ span {
 }
 
 .fonct1:hover > .fa-mobile-alt {
-    color: #9356dc;
+    color: $clr-primary;
 }
 
 .fonct2 {
@@ -153,7 +168,7 @@ span {
 }
 
 .fonct2:hover > .fa-list {
-    color: #9356dc;
+    color: $clr-primary;
 }
 
 .fonct3 {
@@ -181,7 +196,7 @@ span {
 }
 
 .fonct3:hover > .fa-store {
-    color: #9356dc;
+    color: $clr-primary;
 }
 
 .restaurants {

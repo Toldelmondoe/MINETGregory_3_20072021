@@ -127,6 +127,17 @@ span {
   margin: 1rem 0 2rem 0;
 }
 
+.button {
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  padding: 15px 15px;
+  border-radius: 25px 25px 25px 25px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
+}
+
 .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +209,7 @@ span {
 }
 
 .fonct1:hover > .fa-mobile-alt {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .fonct2 {
@@ -234,7 +245,7 @@ span {
 }
 
 .fonct2:hover > .fa-list {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .fonct3 {
@@ -269,7 +280,7 @@ span {
 }
 
 .fonct3:hover > .fa-store {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .restaurants {
