@@ -246,7 +246,6 @@ span {
     margin-bottom: 18px;
 }
 
-
 .restaurant img {
     display: flex;
     object-fit: cover;
@@ -254,6 +253,18 @@ span {
     height: 174px;
     width: 334px;
     border-radius: 15px 15px 0 0;
+}
+
+.new {
+    position: absolute;
+    right: 18px;
+    color: #008766;
+    background: $clr-tertiary;
+    font-weight: 500;
+    margin: -10rem 1rem 0 0;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .restaurants a {
