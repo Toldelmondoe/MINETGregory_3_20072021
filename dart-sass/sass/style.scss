@@ -1,7 +1,7 @@
 @import "libs/reset.scss";
 
 $clr-primary: #9356DC;
-$clr-Secondary: #FF79DA;
+$clr-secondary: #FF79DA;
 $clr-tertiary: #99E2D0;
 
 h1, h2, h3, h5, h6, p, a, i, li, strong, span {
@@ -17,7 +17,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.57em;
 }
 
 h2 {
@@ -73,6 +73,7 @@ span {
 }
 
 .entete p {
+    font-size: 1.05em;
     margin: 16px 0 32px 0;
 }
 
@@ -84,7 +85,7 @@ span {
     border-radius: 25px 25px 25px 25px;
     cursor: pointer;
     border: 1px solid transparent;
-    background: linear-gradient(170deg, $clr-Secondary 4%, $clr-primary 100%);
+    background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
     box-shadow: 1px 1px 5px #979393;
 }
 
@@ -124,13 +125,13 @@ span {
     max-width: 100%;
     text-align: center;
     height: 73px;
-    width: 327px;
+    width: 314px;
     align-items: center;
     justify-content: center;
     border: 1px solid #f6f6f6;
     background: #f6f6f6;
     border-radius: 25px 25px 25px 25px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
 }
@@ -153,13 +154,13 @@ span {
     max-width: 100%;
     text-align: center;
     height: 73px;
-    width: 327px;
+    width: 314px;
     align-items: center;
     justify-content: center;
     border: 1px solid #f6f6f6;
     background: #f6f6f6;
     border-radius: 25px 25px 25px 25px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
 }
@@ -182,12 +183,13 @@ span {
     max-width: 100%;
     text-align: center;
     height: 73px;
-    width: 327px;
+    width: 314px;
     align-items: center;
     justify-content: center;
     border: 1px solid #f6f6f6;
     background: #f6f6f6;
     border-radius: 25px 25px 25px 25px;
+    margin: 0 0 0 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
 }
@@ -203,6 +205,21 @@ span {
 
 .fonct3:hover > .fa-store {
     color: $clr-primary;
+}
+
+.number {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid transparent;
+    border-radius: 50% 50% 50% 50%;
+    background: $clr-primary;
+    font-weight: 400;
+    position: absolute;
+    left: 21px
 }
 
 .restaurants {
