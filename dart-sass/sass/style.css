@@ -69,12 +69,12 @@ h3 {
   font-size: 1.1em;
 }
 
-span {
-  font-size: 1em;
+h4 {
+  font-size: 1.57em;
 }
 
-.centre {
-  text-align: center;
+span {
+  font-size: 1em;
 }
 
 .logo {
@@ -459,5 +459,119 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/*Pages menus*/
+header .fa-arrow-left {
+  color: #353535;
+  position: absolute;
+  left: 23px;
+  top: 25px;
+  font-size: 1.2rem;
+}
+
+.photorestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photorestaurant img {
+  max-width: 100%;
+  max-height: 257px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  background-color: #f6f6f6;
+  padding: 15px 15px 35px 15px;
+  border-radius: 35px 35px 0 0;
+  margin-top: -30px;
+}
+
+.cartemenu h5 {
+  margin: 35px 0 0 7px;
+  position: relative;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.barre {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin: 9px 0 14px 6px;
+}
+
+.menu h4 {
+  margin-top: 18px;
+}
+
+.vide1 {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  font-size: 1.6em;
+  color: #4b4b4b;
+}
+
+.plein1 {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  font-size: 1.6em;
+  color: transparent;
+}
+
+.carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  margin-bottom: 14px;
+}
+
+.carte__txt h3 {
+  margin: 16px 0 0 11px;
+  white-space: nowrap;
+  width: 271px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carte__txt p {
+  margin: 12px 0px 16px 11px;
+  white-space: nowrap;
+  width: 271px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carte__prix p {
+  position: absolute;
+  top: 42px;
+  right: 23px;
 }
 /*# sourceMappingURL=style.css.map */
