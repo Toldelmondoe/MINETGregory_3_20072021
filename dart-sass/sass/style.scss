@@ -65,7 +65,6 @@ span {
 
 .entete {
     background: #f6f6f6;
-
     max-width: 100%;
     text-align: center;
     padding: 45px 30px 56px 39px;
@@ -383,7 +382,7 @@ header .fa-arrow-left {
     flex-direction: column;
     max-width: 100%;
     background-color: #f6f6f6;
-    padding: 15px 15px 35px 15px;
+    padding: 15px 15px 83px 15px;
     border-radius: 35px 35px 0 0;
     margin-top: -30px;
 }
@@ -429,7 +428,7 @@ header .fa-arrow-left {
     display: flex;
     position: relative;
     background-color: white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
     margin-bottom: 14px;
 }
 
@@ -453,4 +452,26 @@ header .fa-arrow-left {
     position: absolute;
     top: 42px;
     right: 23px;
+}
+
+.command {
+    text-align: center;
+}
+
+.button2 {
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    padding: 18px 49px 20px 49px;
+    margin-top: 36px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
+    box-shadow: 1px 1px 5px #979393;
+}
+
+.button2:hover {
+    opacity: 0.9;
+    box-shadow: 1px 3px 5px #979393;
 }
