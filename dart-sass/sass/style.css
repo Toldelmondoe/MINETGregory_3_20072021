@@ -171,6 +171,7 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -192,7 +193,6 @@ span {
   max-width: 100%;
   text-align: center;
   height: 73px;
-  width: 314px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -228,7 +228,6 @@ span {
   max-width: 100%;
   text-align: center;
   height: 73px;
-  width: 314px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -264,7 +263,6 @@ span {
   max-width: 100%;
   text-align: center;
   height: 73px;
-  width: 314px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -311,7 +309,7 @@ span {
   background: #9356DC;
   font-weight: 400;
   position: absolute;
-  left: 21px;
+  left: 2px;
 }
 
 .restaurants {
@@ -321,6 +319,8 @@ span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  text-align: center;
   max-width: 100%;
   padding: 60px 20px 42px 20px;
 }
@@ -340,12 +340,19 @@ span {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 100%;
   -webkit-box-shadow: 1px 3px 10px #e5e5e5;
           box-shadow: 1px 3px 10px #e5e5e5;
+  margin-bottom: 18px;
 }
 
-.restaurants .restaurant {
-  margin-bottom: 18px;
+.restaurants a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 .restaurant img {
@@ -355,8 +362,9 @@ span {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
-  height: 174px;
-  width: 334px;
+  width: 100%;
+  max-height: 174px;
+  height: 100%;
   border-radius: 15px 15px 0 0;
 }
 
@@ -374,12 +382,6 @@ span {
   padding: 6px 10px;
   font-size: 0.9rem;
   border-radius: 3px 3px 3px 3px;
-}
-
-.restaurants a {
-  display: block;
-  text-decoration: none;
-  color: black;
 }
 
 .text {
