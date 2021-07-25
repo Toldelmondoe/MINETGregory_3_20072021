@@ -519,9 +519,8 @@ header .fa-arrow-left {
 }
 
 .barre {
-  background-color: #99E2D0;
   width: 40px;
-  height: 3px;
+  border: 3px solid #99E2D0;
   margin: 9px 0 14px 6px;
 }
 
@@ -558,17 +557,17 @@ header .fa-arrow-left {
 .carte__txt h3 {
   margin: 16px 0 0 11px;
   white-space: nowrap;
-  width: 271px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .carte__txt p {
   margin: 12px 0px 16px 11px;
   white-space: nowrap;
-  width: 271px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .carte__prix p {
