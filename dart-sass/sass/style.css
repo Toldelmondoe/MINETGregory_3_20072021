@@ -623,15 +623,44 @@ header .fa-arrow-left {
   text-overflow: ellipsis;
 }
 
-.menu .cartemenu .carte__prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 23px;
-  font-weight: bold;
+.menu .cartemenu .carte:hover .carte__animation {
+  margin-right: 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-animation: slide-left;
+          animation: slide-left;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.menu .cartemenu .carte:hover i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.menu .cartemenu .carte:hover:hover .carte__animation {
+  margin-right: 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.menu .cartemenu .carte:hover:hover i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .menu .cartemenu .carte__animation {
@@ -653,8 +682,8 @@ header .fa-arrow-left {
 }
 
 .menu .cartemenu .carte__animation i {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .menu .cartemenu .carte__animation:hover .carte__animation {
@@ -668,5 +697,16 @@ header .fa-arrow-left {
           transform: rotate(0deg);
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+}
+
+.menu .cartemenu .carte__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 23px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
