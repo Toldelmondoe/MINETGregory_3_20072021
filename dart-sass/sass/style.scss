@@ -49,14 +49,14 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    p {
+        margin-left: 19px;
+        color: #353535;
+    }
 }
 
 .fa-map-marker-alt {
-    color: #353535;
-}
-
-.locate p {
-    margin-left: 19px;
     color: #353535;
 }
 
@@ -65,11 +65,11 @@ span {
     max-width: 100%;
     text-align: center;
     padding: 45px 30px 56px 39px;
-}
 
-.entete p {
-    font-size: 1.05em;
-    margin: 16px 0 32px 0;
+    p {
+        font-size: 1.05em;
+        margin: 16px 0 32px 0;
+    }
 }
 
 .button {
@@ -96,11 +96,11 @@ span {
     max-width: 100%;
     text-align: center;
     padding: 52px 20px;
-}
 
-.fonctionnement h2 {
-    text-align: left;
-    margin-bottom: 35px;
+    h2 {
+        text-align: left;
+        margin-bottom: 35px;
+    }
 }
 
 .fonct {
@@ -110,10 +110,10 @@ span {
     flex-wrap: wrap;
     max-width: 100%;
     text-align: center;
-}
 
-.fonct li {
-    font-weight: bolder;
+    li {
+        font-weight: bolder;
+    }
 }
 
 .fonct1 {
@@ -223,11 +223,18 @@ span {
     text-align: center;
     max-width: 100%;
     padding: 60px 20px 42px 20px;
-}
 
-.restaurants h2 {
-    text-align: left;
-    margin-bottom: 23px;
+    a {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+
+    h2 {
+        text-align: left;
+        margin-bottom: 23px;
+    }
 }
 
 .restaurant {
@@ -237,23 +244,16 @@ span {
     max-width: 100%;
     box-shadow: 1px 3px 10px #e5e5e5;
     margin-bottom: 18px;
-}
 
-.restaurants a {
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: black;
-}
-
-.restaurant img {
-    display: flex;
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    max-height: 174px;
-    height: 100%;
-    border-radius: 15px 15px 0 0;
+    img {
+        display: flex;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        max-height: 174px;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+    }
 }
 
 .restnew {
@@ -277,15 +277,15 @@ span {
     text-align: left;
     background: white;
     border-radius: 0 0 15px 15px;
-}
 
-.text h3 {
-    padding: 17px 0 6px 14px;
-}
+    h3 {
+        padding: 17px 0 6px 14px;
+    }
 
-.text p {
-    font-size: 1.06rem;
-    padding: 0px 0px 17px 14px;
+    p {
+        font-size: 1.06rem;
+        padding: 0px 0px 17px 14px;
+    }
 }
 
 .coeurvide {
@@ -361,13 +361,13 @@ header .fa-arrow-left {
 .photorestaurant {
     display: flex;
     flex-direction: column;
-}
 
-.photorestaurant img {
-    max-width: 100%;
-    max-height: 257px;
-    height: 100%;
-    object-fit: cover;
+    img {
+        max-width: 100%;
+        max-height: 257px;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .menu {
@@ -379,6 +379,10 @@ header .fa-arrow-left {
     padding: 15px 15px 83px 15px;
     border-radius: 35px 35px 0 0;
     margin-top: -30px;
+
+    h4 {
+        margin-top: 18px;
+    }
 }
 
 .cartemenu h5 {
@@ -399,10 +403,6 @@ hr.barre {
     margin: 9px 0 14px 6px;
 }
 
-.menu h4 {
-    margin-top: 18px;
-}
-
 .vide1 {
     position: absolute;
     top: 38px;
@@ -421,32 +421,72 @@ hr.barre {
 
 .carte {
     display: flex;
-    position: relative;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 14px;
-}
-
-.carte__txt h3 {
-    margin: 16px 0 0 11px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    cursor: pointer;
     overflow: hidden;
-    white-space: nowrap;
-}
 
-.carte__txt p {
-    margin: 12px 0px 16px 11px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
+    h3 {
+        margin: 16px 0 0 11px; 
+    }
 
-.carte__prix p {
-    position: absolute;
-    top: 42px;
-    right: 23px;
+    p {
+        margin: 12px 0px 16px 11px; 
+    }
+
+    &__txt {
+        overflow: hidden;
+        white-space: nowrap;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    }
+
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        margin-right: 23px;
+        font-weight: bold;
+    }
+
+    &__animation {
+        margin-right: -59px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #99e2d0;
+        color: #fff;
+        border-radius: 0 15px 15px 0;
+        width: 59px;
+        min-height: 100%;
+        font-size: 1.3rem;
+        
+        i {
+            transform: rotate(-360deg);
+        }  
+        
+        &:hover {
+            .carte__animation {
+                margin-right:0;
+                transition: 0.4s ease-out;
+            }
+        
+            i {
+                transform: rotate(0deg);
+                transition: 0.4s ease-out;
+            }  
+        }      
+    }
 }
 
 .command {
