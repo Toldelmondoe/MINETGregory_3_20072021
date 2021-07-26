@@ -502,31 +502,23 @@ header .fa-arrow-left {
 
                 .carte__animation {
                     margin-right:0;
-                    transition: 0.5s ease-out;
-                    animation: slide-left;
-                    animation-duration: 1s;
-                    animation-timing-function: ease-out;
-                    animation-delay: 0s;
-                    animation-iteration-count: 1;
-                    animation-direction: normal;
-                    animation-fill-mode: both;
-                    animation-play-state: running;
+                    transition: 0.35s ease-out;
                 }
 
                 i {
-                    transform: rotate(-180deg);
+                    transform: rotate(-360deg);
                 } 
-                
+
                 &:hover {
 
                     .carte__animation {
                         margin-right:0;
-                        transition: 0.5s ease-out;
+                        transition: 0.35s ease-out;
                     }    
                 
                     i {
                         transform: rotate(0deg);
-                        transition: 0.5s ease-out;
+                        transition: 0.35s ease-out;  
                     }  
                 }
             }  
@@ -543,19 +535,19 @@ header .fa-arrow-left {
                 font-size: 1.3rem; 
                 
                 i {
-                    transform: rotate(-180deg);
+                    transform: rotate(-360deg);
                 } 
 
                 &:hover {
 
                     .carte__animation {
                         margin-right:0;
-                        transition: 0.5s ease-out;
+                        transition: 0.35s ease-out;
                     }    
                 
                     i {
                         transform: rotate(0deg);
-                        transition: 0.5s ease-out;
+                        transition: 0.35s ease-out;
                     }  
                 } 
             }
