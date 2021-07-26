@@ -382,7 +382,7 @@ a {
   font-weight: 500;
   padding: 6px 10px;
   font-size: 0.9rem;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
 }
 
 .text {
@@ -445,17 +445,18 @@ footer li {
   padding-bottom: 8px;
 }
 
-.fa-hands-helping {
-  font-size: 11px;
-}
-
-.fa-utensils, .fa-hands-helping {
-  margin-right: 12px;
-}
-
 footer a {
   text-decoration: none;
   color: white;
+}
+
+footer .fa-hands-helping {
+  font-size: 11px;
+  margin-right: 12px;
+}
+
+footer .fa-utensils {
+  margin-right: 12px;
 }
 
 /*Pages menus*/
@@ -485,46 +486,6 @@ header .fa-arrow-left {
      object-fit: cover;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 100%;
-  background-color: #f6f6f6;
-  padding: 15px 15px 83px 15px;
-  border-radius: 35px 35px 0 0;
-  margin-top: -30px;
-}
-
-.menu h4 {
-  margin-top: 18px;
-}
-
-.cartemenu h5 {
-  margin: 35px 0 0 7px;
-  position: relative;
-}
-
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-hr.barre {
-  width: 40px;
-  height: 3px;
-  border: 1px solid #99E2D0;
-  background-color: #99E2D0;
-  margin: 9px 0 14px 6px;
-}
-
 .coeurvide1 {
   position: absolute;
   top: 38px;
@@ -550,96 +511,6 @@ hr.barre {
   opacity: 1;
 }
 
-.carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
-  border-radius: 15px;
-  margin-bottom: 14px;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-animation: slide-item 1.3s .3s ease-in-out both;
-          animation: slide-item 1.3s .3s ease-in-out both;
-}
-
-.carte h3 {
-  margin: 16px 0 0 11px;
-}
-
-.carte p {
-  margin: 12px 0px 16px 11px;
-}
-
-.carte__txt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.carte__txt p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.carte__txt h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.carte__prix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-right: 23px;
-  font-weight: bold;
-}
-
-.carte__animation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #99e2d0;
-  color: #fff;
-  border-radius: 0 15px 15px 0;
-  margin-right: -59px;
-  width: 59px;
-  min-height: 100%;
-  font-size: 1.3rem;
-}
-
-.carte__animation i {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-}
-
-.carte__animation:hover .carte__animation {
-  margin-right: 0;
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-}
-
-.carte__animation:hover i {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: 0.4s ease-out;
-  transition: 0.4s ease-out;
-}
-
 .button2 {
   font-size: 1em;
   color: white;
@@ -662,5 +533,140 @@ hr.barre {
   opacity: 0.9;
   -webkit-box-shadow: 1px 3px 5px #979393;
           box-shadow: 1px 3px 5px #979393;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  background-color: #f6f6f6;
+  padding: 15px 15px 83px 15px;
+  border-radius: 35px 35px 0 0;
+  margin-top: -30px;
+}
+
+.menu h4 {
+  margin-top: 18px;
+}
+
+.menu .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-right: 3rem;
+  font-size: 1.15rem;
+}
+
+.menu .title i {
+  font-size: 1.6rem;
+}
+
+.menu .cartemenu h5 {
+  margin: 35px 0 0 7px;
+  position: relative;
+}
+
+.menu .cartemenu hr {
+  width: 40px;
+  height: 3px;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  margin: 9px 0 14px 6px;
+}
+
+.menu .cartemenu .carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-animation: slide-item 1.3s .3s ease-in-out both;
+          animation: slide-item 1.3s .3s ease-in-out both;
+}
+
+.menu .cartemenu .carte h3 {
+  margin: 16px 0 0 11px;
+}
+
+.menu .cartemenu .carte p {
+  margin: 12px 0px 16px 11px;
+}
+
+.menu .cartemenu .carte__txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu .cartemenu .carte__txt p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .cartemenu .carte__txt h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .cartemenu .carte__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 23px;
+  font-weight: bold;
+}
+
+.menu .cartemenu .carte__animation {
+  margin-right: -59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  color: #fff;
+  width: 59px;
+  min-height: 100%;
+  font-size: 1.3rem;
+}
+
+.menu .cartemenu .carte__animation i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.menu .cartemenu .carte__animation:hover .carte__animation {
+  margin-right: 0;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.menu .cartemenu .carte__animation:hover i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 /*# sourceMappingURL=style.css.map */
