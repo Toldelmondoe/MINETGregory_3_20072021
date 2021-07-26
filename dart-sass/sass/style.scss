@@ -46,9 +46,6 @@ span {
 .locate {
     background: #eaeaea;
     height: 50px;
-}
-
-.locate {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,11 +82,11 @@ span {
     border: 1px solid transparent;
     background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
     box-shadow: 1px 1px 5px #979393;
-}
 
-.button:hover {
-    opacity: 0.9;
-    box-shadow: 1px 3px 5px #979393;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 1px 3px 5px #979393;
+    }
 }
 
 .fonctionnement {
@@ -132,10 +129,10 @@ span {
     margin: 0 0 25px 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
-}
 
-.fonct1:hover {
-    background: #f5edff;
+    &:hover {
+        background: #f5edff;
+    }
 }
 
 .fa-mobile-alt {
@@ -160,10 +157,10 @@ span {
     margin: 0 0 25px 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
-}
 
-.fonct2:hover {
-    background: #f5edff;
+    &:hover {
+        background: #f5edff;
+    }
 }
 
 .fa-list {
@@ -188,10 +185,10 @@ span {
     margin: 0 0 0 13px;
     cursor: pointer;
     box-shadow: 1px 5px 10px #e8e8e8;
-}
 
-.fonct3:hover {
-    background: #f5edff;
+    &:hover {
+        background: #f5edff;
+    }
 }
 
 .fa-store {
@@ -283,16 +280,15 @@ span {
 }
 
 .text h3 {
-    padding-top: 20px;
-    padding-left: 14px; 
+    padding: 17px 0 6px 14px;
 }
 
 .text p {
-    padding-bottom: 20px;
-    padding-left: 14px; 
+    font-size: 1.06rem;
+    padding: 0px 0px 17px 14px;
 }
 
-.vide {
+.coeurvide {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -300,22 +296,20 @@ span {
     color: #4b4b4b;
 }
 
-.plein {
+.coeurplein {
     position: absolute;
     top: 25px;
     right: 25px;
     font-size: 1.6em;
-    color: transparent
-}
-
-.vide:hover {  
-    font-size: 1.6em;
-    color:transparent;
-}
-
-.plein:hover {
+    color: transparent;
+    opacity: 0;
+    transition: opacity 0.35s;
     background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
     background-clip: text;
+    
+    &:hover {
+        opacity: 1;
+    }
 }
 
 a {
@@ -397,9 +391,11 @@ header .fa-arrow-left {
     position: relative;
 }
 
-.barre {
+hr.barre {
     width: 40px;
-    border: 3px solid $clr-tertiary;
+    height: 3px;
+    border: 1px solid $clr-tertiary;
+    background-color: $clr-tertiary;
     margin: 9px 0 14px 6px;
 }
 
@@ -468,9 +464,9 @@ header .fa-arrow-left {
     border: 1px solid transparent;
     background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
     box-shadow: 1px 1px 5px #979393;
-}
 
-.button2:hover {
-    opacity: 0.9;
-    box-shadow: 1px 3px 5px #979393;
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 1px 3px 5px #979393;
+    }
 }
