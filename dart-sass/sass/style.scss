@@ -36,6 +36,10 @@ span {
     font-size: 1em;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     height: 63px;
     display: flex;
@@ -312,27 +316,23 @@ span {
     }
 }
 
-a {
-    text-decoration: none;
-}
-
 footer {
     background: #353535;
     color:white;
     height: 197px;
-}
 
-footer h4 {
-    padding: 20px 0 0 25px;
-    font-size: 20px;
-}
+    h4 {
+        padding: 20px 0 0 25px;
+        font-size: 20px;
+    }
 
-footer ul {
-    padding: 15px 0 0 20px;
-}
+    ul {
+        padding: 15px 0 0 20px;
+    }
 
-footer li {
-    padding-bottom: 8px;
+    li {
+        padding-bottom: 8px;
+    }
 }
 
 .fa-hands-helping {
@@ -499,10 +499,6 @@ hr.barre {
     }
 }
 
-.command {
-    text-align: center;
-}
-
 .button2 {
     font-size: 1em;
     color: white;
@@ -514,6 +510,10 @@ hr.barre {
     border: 1px solid transparent;
     background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
     box-shadow: 1px 1px 5px #979393;
+
+    &__command {
+        text-align: center;
+    }
 
     &:hover {
         opacity: 0.9;

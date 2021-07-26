@@ -77,6 +77,10 @@ span {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   height: 63px;
   display: -webkit-box;
@@ -422,10 +426,6 @@ span {
   opacity: 1;
 }
 
-a {
-  text-decoration: none;
-}
-
 footer {
   background: #353535;
   color: white;
@@ -640,10 +640,6 @@ hr.barre {
   transition: 0.4s ease-out;
 }
 
-.command {
-  text-align: center;
-}
-
 .button2 {
   font-size: 1em;
   color: white;
@@ -656,6 +652,10 @@ hr.barre {
   background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   -webkit-box-shadow: 1px 1px 5px #979393;
           box-shadow: 1px 1px 5px #979393;
+}
+
+.button2__command {
+  text-align: center;
 }
 
 .button2:hover {
