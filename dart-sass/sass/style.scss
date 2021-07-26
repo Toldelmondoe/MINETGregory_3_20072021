@@ -403,7 +403,7 @@ hr.barre {
     margin: 9px 0 14px 6px;
 }
 
-.vide1 {
+.coeurvide1 {
     position: absolute;
     top: 38px;
     right: 38px;
@@ -411,12 +411,20 @@ hr.barre {
     color: #4b4b4b;
 }
 
-.plein1 {
+.coeurplein1 {
     position: absolute;
     top: 38px;
     right: 38px;
     font-size: 1.6em;
     color: transparent;
+    opacity: 0;
+    transition: opacity 0.35s;
+    background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
+    background-clip: text;
+    
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .carte {
@@ -427,6 +435,7 @@ hr.barre {
     margin-bottom: 14px;
     cursor: pointer;
     overflow: hidden;
+    animation: slide-item 1.3s .3s ease-in-out both;
 
     h3 {
         margin: 16px 0 0 11px; 
@@ -437,6 +446,7 @@ hr.barre {
     }
 
     &__txt {
+        flex: 1;
         overflow: hidden;
         white-space: nowrap;
 
@@ -460,13 +470,13 @@ hr.barre {
     }
 
     &__animation {
-        margin-right: -59px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #99e2d0;
         color: #fff;
         border-radius: 0 15px 15px 0;
+        margin-right: -59px;
         width: 59px;
         min-height: 100%;
         font-size: 1.3rem;
