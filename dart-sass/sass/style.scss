@@ -40,28 +40,37 @@ a {
     text-decoration: none;
 }
 
-.logo {
-    height: 63px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.locate {
-    background: #eaeaea;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    p {
-        margin-left: 19px;
-        color: #353535;
+header {
+    .logo {
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-.fa-map-marker-alt {
-    color: #353535;
+    .degrade {
+        height: 6px;
+        width: 100%;
+        background: linear-gradient(#cfcfcf, #eaeaea);
+        border: none;
+    }
+
+    .locate {
+        background: #eaeaea;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fa-map-marker-alt {
+            color: #353535;
+        }
+    
+        p {
+            margin-left: 19px;
+            color: #353535;
+        }
+    }
 }
 
 .entete {

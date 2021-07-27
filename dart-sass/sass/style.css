@@ -81,7 +81,7 @@ a {
   text-decoration: none;
 }
 
-.logo {
+header .logo {
   height: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,9 +94,17 @@ a {
           justify-content: center;
 }
 
-.locate {
+header .degrade {
+  height: 6px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#eaeaea));
+  background: linear-gradient(#cfcfcf, #eaeaea);
+  border: none;
+}
+
+header .locate {
   background: #eaeaea;
-  height: 50px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,12 +116,12 @@ a {
           justify-content: center;
 }
 
-.locate p {
-  margin-left: 19px;
+header .locate .fa-map-marker-alt {
   color: #353535;
 }
 
-.fa-map-marker-alt {
+header .locate p {
+  margin-left: 19px;
   color: #353535;
 }
 
