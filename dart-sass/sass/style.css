@@ -47,7 +47,7 @@ td, th {
 
 h1 {
   font-family: "Shrikhand";
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 h2, h3, h4, h5, h6, p, a, i, li, strong, span {
@@ -59,7 +59,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.62em;
+  font-size: 1.75em;
 }
 
 h2 {
@@ -95,7 +95,11 @@ header .logo {
           justify-content: center;
 }
 
-header .degrade {
+header h1 {
+  font-size: 1.8em;
+}
+
+main .degrade {
   height: 6px;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#eaeaea));
@@ -103,7 +107,7 @@ header .degrade {
   border: none;
 }
 
-header .locate {
+main .locate {
   background: #eaeaea;
   height: 45px;
   display: -webkit-box;
@@ -117,28 +121,29 @@ header .locate {
           justify-content: center;
 }
 
-header .locate .fa-map-marker-alt {
+main .locate .fa-map-marker-alt {
   color: #353535;
 }
 
-header .locate p {
+main .locate p {
   margin-left: 19px;
   color: #353535;
 }
 
-.entete {
+main .entete {
   background: #f6f6f6;
   max-width: 100%;
   text-align: center;
   padding: 45px 30px 56px 39px;
 }
 
-.entete p {
+main .entete p {
   font-size: 1.05em;
+  font-weight: lighter;
   margin: 16px 0 32px 0;
 }
 
-.entete .button {
+main .entete .button {
   font-size: 1em;
   color: white;
   font-weight: 550;
@@ -151,13 +156,13 @@ header .locate p {
           box-shadow: 1px 1px 5px #979393;
 }
 
-.entete .button:hover {
+main .entete .button:hover {
   opacity: 0.85;
   -webkit-box-shadow: 1px 3px 5px #979393;
           box-shadow: 1px 3px 5px #979393;
 }
 
-.fonctionnement {
+main .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,13 +177,13 @@ header .locate p {
   padding: 52px 20px;
 }
 
-.fonctionnement h3 {
+main .fonctionnement h3 {
   text-align: left;
   margin-bottom: 35px;
   font-size: 1.5em;
 }
 
-.fonctionnement .fonct {
+main .fonctionnement .fonct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,11 +198,11 @@ header .locate p {
   text-align: center;
 }
 
-.fonctionnement .fonct li {
+main .fonctionnement .fonct li {
   font-weight: bolder;
 }
 
-.fonctionnement .fonct__1 {
+main .fonctionnement .fonct__1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,9 +212,10 @@ header .locate p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 37px;
   border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
@@ -219,22 +225,22 @@ header .locate p {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonctionnement .fonct__1:hover {
+main .fonctionnement .fonct__1:hover {
   background: #f5edff;
   -webkit-box-shadow: 1px 5px 10px #c3b4d4;
           box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fonctionnement .fonct .fa-mobile-alt {
+main .fonctionnement .fonct .fa-mobile-alt {
   margin-right: 28px;
   color: #7e7e7e;
 }
 
-.fonctionnement .fonct .fonct__1:hover > .fa-mobile-alt {
+main .fonctionnement .fonct .fonct__1:hover > .fa-mobile-alt {
   color: #9356DC;
 }
 
-.fonctionnement .fonct__2 {
+main .fonctionnement .fonct__2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,9 +250,10 @@ header .locate p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 37px;
   border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
@@ -256,22 +263,22 @@ header .locate p {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonctionnement .fonct__2:hover {
+main .fonctionnement .fonct__2:hover {
   background: #f5edff;
   -webkit-box-shadow: 1px 5px 10px #c3b4d4;
           box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fonctionnement .fonct .fa-list {
+main .fonctionnement .fonct .fa-list {
   margin-right: 24px;
   color: #7e7e7e;
 }
 
-.fonctionnement .fonct .fonct__2:hover > .fa-list {
+main .fonctionnement .fonct .fonct__2:hover > .fa-list {
   color: #9356DC;
 }
 
-.fonctionnement .fonct__3 {
+main .fonctionnement .fonct__3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,9 +288,10 @@ header .locate p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 37px;
   border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
@@ -293,22 +301,22 @@ header .locate p {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonctionnement .fonct__3:hover {
+main .fonctionnement .fonct__3:hover {
   background: #f5edff;
   -webkit-box-shadow: 1px 5px 10px #c3b4d4;
           box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fonctionnement .fonct .fa-store {
+main .fonctionnement .fonct .fa-store {
   margin-right: 21px;
   color: #7e7e7e;
 }
 
-.fonctionnement .fonct .fonct__3:hover > .fa-store {
+main .fonctionnement .fonct .fonct__3:hover > .fa-store {
   color: #9356DC;
 }
 
-.fonctionnement .fonct__number {
+main .fonctionnement .fonct__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +337,7 @@ header .locate p {
   left: 2px;
 }
 
-.restaurants {
+main .restaurants {
   background: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,7 +350,7 @@ header .locate p {
   padding: 60px 20px 42px 20px;
 }
 
-.restaurants a {
+main .restaurants a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,13 +359,13 @@ header .locate p {
   color: black;
 }
 
-.restaurants h3 {
+main .restaurants h3 {
   text-align: left;
   margin-bottom: 23px;
   font-size: 1.5em;
 }
 
-.restaurants .restaurant {
+main .restaurants .restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,7 +379,7 @@ header .locate p {
   margin-bottom: 18px;
 }
 
-.restaurants .restaurant img {
+main .restaurants .restaurant img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,11 +392,11 @@ header .locate p {
   border-radius: 15px 15px 0 0;
 }
 
-.restaurants .restnew {
+main .restaurants .restnew {
   position: relative;
 }
 
-.restaurants .new {
+main .restaurants .new {
   position: absolute;
   top: 14px;
   right: 12px;
@@ -400,24 +408,24 @@ header .locate p {
   border-radius: 3px;
 }
 
-.restaurants .text {
+main .restaurants .text {
   position: relative;
   text-align: left;
   background: white;
   border-radius: 0 0 15px 15px;
 }
 
-.restaurants .text h4 {
+main .restaurants .text h4 {
   padding: 17px 0 6px 14px;
 }
 
-.restaurants .text p {
+main .restaurants .text p {
   font-size: 1.06rem;
   font-weight: lighter;
   padding: 0px 0px 17px 14px;
 }
 
-.restaurants .coeurvide {
+main .restaurants .coeurvide {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -425,7 +433,7 @@ header .locate p {
   color: #4b4b4b;
 }
 
-.restaurants .coeurplein {
+main .restaurants .coeurplein {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -438,7 +446,7 @@ header .locate p {
   background-clip: text;
 }
 
-.restaurants .coeurplein:hover {
+main .restaurants .coeurplein:hover {
   opacity: 1;
 }
 
@@ -476,7 +484,7 @@ footer .fa-utensils {
 }
 
 /*Pages menus*/
-.fa-arrow-left {
+header .fa-arrow-left {
   color: #353535;
   position: absolute;
   left: 23px;
@@ -484,7 +492,7 @@ footer .fa-utensils {
   font-size: 1.2rem;
 }
 
-.photorestaurant {
+main .photorestaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,7 +502,7 @@ footer .fa-utensils {
           flex-direction: column;
 }
 
-.photorestaurant img {
+main .photorestaurant img {
   max-width: 100%;
   max-height: 257px;
   height: 100%;
@@ -502,7 +510,7 @@ footer .fa-utensils {
      object-fit: cover;
 }
 
-.menu {
+main .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,16 +521,16 @@ footer .fa-utensils {
           flex-direction: column;
   max-width: 100%;
   background-color: #f6f6f6;
-  padding: 34px 15px 83px 15px;
+  padding: 31px 15px 83px 15px;
   border-radius: 35px 35px 0 0;
   margin-top: -30px;
 }
 
-.menu h4 {
+main .menu h4 {
   margin-top: 18px;
 }
 
-.menu .title {
+main .menu .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,11 +539,11 @@ footer .fa-utensils {
   font-size: 1.15rem;
 }
 
-.menu .title i {
+main .menu .title i {
   font-size: 1.6rem;
 }
 
-.menu .coeurvide1 {
+main .menu .coeurvide1 {
   position: absolute;
   top: 38px;
   right: 38px;
@@ -543,7 +551,7 @@ footer .fa-utensils {
   color: #4b4b4b;
 }
 
-.menu .coeurplein1 {
+main .menu .coeurplein1 {
   position: absolute;
   top: 38px;
   right: 38px;
@@ -556,18 +564,18 @@ footer .fa-utensils {
   background-clip: text;
 }
 
-.menu .coeurplein1:hover {
+main .menu .coeurplein1:hover {
   opacity: 1;
 }
 
-.menu .cartemenu h4 {
-  margin: 35px 0 0 7px;
+main .menu .cartemenu h4 {
+  margin: 30px 0 0 7px;
   position: relative;
   font-weight: normal;
   color: #7b7b7b;
 }
 
-.menu .cartemenu__barre {
+main .menu .cartemenu__barre {
   width: 40px;
   height: 3px;
   border: 1px solid #99E2D0;
@@ -575,7 +583,7 @@ footer .fa-utensils {
   margin: 9px 0 14px 6px;
 }
 
-.menu .cartemenu .carte {
+main .menu .cartemenu .carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,17 +599,17 @@ footer .fa-utensils {
           animation: slide-item 1.3s .3s ease-in-out both;
 }
 
-.menu .cartemenu .carte h3 {
+main .menu .cartemenu .carte h3 {
   margin: 16px 0 0 11px;
 }
 
-.menu .cartemenu .carte p {
+main .menu .cartemenu .carte p {
   margin: 12px 0px 16px 11px;
   font-size: 0.93em;
   font-weight: lighter;
 }
 
-.menu .cartemenu .carte__txt {
+main .menu .cartemenu .carte__txt {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -609,17 +617,17 @@ footer .fa-utensils {
   white-space: nowrap;
 }
 
-.menu .cartemenu .carte__txt p {
+main .menu .cartemenu .carte__txt p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.menu .cartemenu .carte__txt h3 {
+main .menu .cartemenu .carte__txt h3 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.menu .cartemenu .carte__prix {
+main .menu .cartemenu .carte__prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,35 +637,35 @@ footer .fa-utensils {
   margin-right: 23px;
 }
 
-.menu .cartemenu .carte__prix p {
+main .menu .cartemenu .carte__prix p {
   font-weight: bold;
 }
 
-.menu .cartemenu .carte:hover .carte__animation {
+main .menu .cartemenu .carte:hover .carte__animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-.menu .cartemenu .carte:hover i {
+main .menu .cartemenu .carte:hover i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
-.menu .cartemenu .carte:hover:hover .carte__animation {
+main .menu .cartemenu .carte:hover:hover .carte__animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-.menu .cartemenu .carte:hover:hover i {
+main .menu .cartemenu .carte:hover:hover i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-.menu .cartemenu .carte__animation {
+main .menu .cartemenu .carte__animation {
   margin-right: -59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,25 +683,25 @@ footer .fa-utensils {
   font-size: 1.3rem;
 }
 
-.menu .cartemenu .carte__animation i {
+main .menu .cartemenu .carte__animation i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
-.menu .cartemenu .carte__animation:hover .carte__animation {
+main .menu .cartemenu .carte__animation:hover .carte__animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-.menu .cartemenu .carte__animation:hover i {
+main .menu .cartemenu .carte__animation:hover i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-.menu .button2 {
+main .menu .button2 {
   font-size: 1em;
   color: white;
   font-weight: 500;
@@ -707,11 +715,11 @@ footer .fa-utensils {
           box-shadow: 1px 1px 5px #979393;
 }
 
-.menu .button2__command {
+main .menu .button2__command {
   text-align: center;
 }
 
-.menu .button2:hover {
+main .menu .button2:hover {
   opacity: 0.85;
   -webkit-box-shadow: 1px 3px 5px #979393;
           box-shadow: 1px 3px 5px #979393;
