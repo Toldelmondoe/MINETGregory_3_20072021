@@ -45,32 +45,33 @@ td, th {
   padding: 0;
 }
 
-h1, h2, h3, h5, h6, p, a, i, li, strong, span {
+h1 {
+  font-family: "Shrikhand";
+  font-weight: bolder;
+}
+
+h2, h3, h4, h5, h6, p, a, i, li, strong, span {
   font-family: "Roboto";
 }
 
-h4 {
-  font-family: "Shrikhand";
-}
-
-h1, h2, h3 {
+h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
 
 h1 {
-  font-size: 1.57em;
+  font-size: 1.62em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.57em;
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.08em;
 }
 
 h4 {
-  font-size: 1.57em;
+  font-size: 1.1em;
 }
 
 span {
@@ -140,9 +141,9 @@ header .locate p {
 .entete .button {
   font-size: 1em;
   color: white;
-  font-weight: 500;
-  padding: 15px 15px;
-  border-radius: 25px 25px 25px 25px;
+  font-weight: 550;
+  padding: 15px;
+  border-radius: 25px;
   cursor: pointer;
   border: none;
   background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
@@ -171,9 +172,10 @@ header .locate p {
   padding: 52px 20px;
 }
 
-.fonctionnement h2 {
+.fonctionnement h3 {
   text-align: left;
   margin-bottom: 35px;
+  font-size: 1.5em;
 }
 
 .fonctionnement .fonct {
@@ -349,9 +351,10 @@ header .locate p {
   color: black;
 }
 
-.restaurants h2 {
+.restaurants h3 {
   text-align: left;
   margin-bottom: 23px;
+  font-size: 1.5em;
 }
 
 .restaurants .restaurant {
@@ -365,8 +368,6 @@ header .locate p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100%;
-  -webkit-box-shadow: 1px 3px 10px #e5e5e5;
-          box-shadow: 1px 3px 10px #e5e5e5;
   margin-bottom: 18px;
 }
 
@@ -406,12 +407,13 @@ header .locate p {
   border-radius: 0 0 15px 15px;
 }
 
-.restaurants .text h3 {
+.restaurants .text h4 {
   padding: 17px 0 6px 14px;
 }
 
 .restaurants .text p {
   font-size: 1.06rem;
+  font-weight: lighter;
   padding: 0px 0px 17px 14px;
 }
 
@@ -446,7 +448,7 @@ footer {
   height: 197px;
 }
 
-footer h4 {
+footer h1 {
   padding: 20px 0 0 25px;
   font-size: 20px;
 }
@@ -511,7 +513,7 @@ footer .fa-utensils {
           flex-direction: column;
   max-width: 100%;
   background-color: #f6f6f6;
-  padding: 15px 15px 83px 15px;
+  padding: 34px 15px 83px 15px;
   border-radius: 35px 35px 0 0;
   margin-top: -30px;
 }
@@ -558,9 +560,11 @@ footer .fa-utensils {
   opacity: 1;
 }
 
-.menu .cartemenu h5 {
+.menu .cartemenu h4 {
   margin: 35px 0 0 7px;
   position: relative;
+  font-weight: normal;
+  color: #7b7b7b;
 }
 
 .menu .cartemenu__barre {
@@ -593,6 +597,8 @@ footer .fa-utensils {
 
 .menu .cartemenu .carte p {
   margin: 12px 0px 16px 11px;
+  font-size: 0.93em;
+  font-weight: lighter;
 }
 
 .menu .cartemenu .carte__txt {
@@ -621,6 +627,9 @@ footer .fa-utensils {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-right: 23px;
+}
+
+.menu .cartemenu .carte__prix p {
   font-weight: bold;
 }
 
@@ -688,7 +697,7 @@ footer .fa-utensils {
   font-size: 1em;
   color: white;
   font-weight: 500;
-  padding: 18px 49px 20px 49px;
+  padding: 19px 49px;
   margin-top: 36px;
   border-radius: 35px;
   cursor: pointer;
