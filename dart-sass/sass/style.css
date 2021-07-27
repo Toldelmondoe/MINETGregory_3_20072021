@@ -136,7 +136,7 @@ a {
   padding: 15px 15px;
   border-radius: 25px 25px 25px 25px;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: none;
   background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   -webkit-box-shadow: 1px 1px 5px #979393;
           box-shadow: 1px 1px 5px #979393;
@@ -187,7 +187,7 @@ a {
   font-weight: bolder;
 }
 
-.fonct1 {
+.fonct__1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #f6f6f6;
+  border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
   margin: 0 0 25px 13px;
@@ -209,20 +209,22 @@ a {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonct1:hover {
+.fonct__1:hover {
   background: #f5edff;
+  -webkit-box-shadow: 1px 5px 10px #c3b4d4;
+          box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fa-mobile-alt {
+.fonct .fa-mobile-alt {
   margin-right: 28px;
   color: #7e7e7e;
 }
 
-.fonct1:hover > .fa-mobile-alt {
+.fonct .fonct__1:hover > .fa-mobile-alt {
   color: #9356DC;
 }
 
-.fonct2 {
+.fonct__2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +237,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #f6f6f6;
+  border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
   margin: 0 0 25px 13px;
@@ -244,20 +246,22 @@ a {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonct2:hover {
+.fonct__2:hover {
   background: #f5edff;
+  -webkit-box-shadow: 1px 5px 10px #c3b4d4;
+          box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fa-list {
+.fonct .fa-list {
   margin-right: 24px;
   color: #7e7e7e;
 }
 
-.fonct2:hover > .fa-list {
+.fonct .fonct__2:hover > .fa-list {
   color: #9356DC;
 }
 
-.fonct3 {
+.fonct__3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +274,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #f6f6f6;
+  border: none;
   background: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
   margin: 0 0 0 13px;
@@ -279,20 +283,22 @@ a {
           box-shadow: 1px 5px 10px #e8e8e8;
 }
 
-.fonct3:hover {
+.fonct__3:hover {
   background: #f5edff;
+  -webkit-box-shadow: 1px 5px 10px #c3b4d4;
+          box-shadow: 1px 5px 10px #c3b4d4;
 }
 
-.fa-store {
+.fonct .fa-store {
   margin-right: 21px;
   color: #7e7e7e;
 }
 
-.fonct3:hover > .fa-store {
+.fonct .fonct__3:hover > .fa-store {
   color: #9356DC;
 }
 
-.number {
+.fonct__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +346,7 @@ a {
   margin-bottom: 23px;
 }
 
-.restaurant {
+.restaurants .restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,7 +362,7 @@ a {
   margin-bottom: 18px;
 }
 
-.restaurant img {
+.restaurants .restaurant img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,11 +375,11 @@ a {
   border-radius: 15px 15px 0 0;
 }
 
-.restnew {
+.restaurants .restnew {
   position: relative;
 }
 
-.new {
+.restaurants .new {
   position: absolute;
   top: 14px;
   right: 12px;
@@ -385,23 +391,23 @@ a {
   border-radius: 3px;
 }
 
-.text {
+.restaurants .text {
   position: relative;
   text-align: left;
   background: white;
   border-radius: 0 0 15px 15px;
 }
 
-.text h3 {
+.restaurants .text h3 {
   padding: 17px 0 6px 14px;
 }
 
-.text p {
+.restaurants .text p {
   font-size: 1.06rem;
   padding: 0px 0px 17px 14px;
 }
 
-.coeurvide {
+.restaurants .coeurvide {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -409,7 +415,7 @@ a {
   color: #4b4b4b;
 }
 
-.coeurplein {
+.restaurants .coeurplein {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -422,7 +428,7 @@ a {
   background-clip: text;
 }
 
-.coeurplein:hover {
+.restaurants .coeurplein:hover {
   opacity: 1;
 }
 
@@ -519,7 +525,7 @@ header .fa-arrow-left {
   margin-top: 36px;
   border-radius: 35px;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: none;
   background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   -webkit-box-shadow: 1px 1px 5px #979393;
           box-shadow: 1px 1px 5px #979393;
