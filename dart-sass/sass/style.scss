@@ -3,6 +3,58 @@
 $clr-primary: #9356DC;
 $clr-secondary: #FF79DA;
 $clr-tertiary: #99E2D0;
+$clr-white: #fff;
+$clr-grey: #f5edff;
+$clr-grey2: #e8e8e8;
+$clr-grey3: #f6f6f6;
+$clr-grey4: #979393;
+$clr-grey5: #7e7e7e;
+$clr-grey6: #4b4b4b;
+$clr-grey7: #353535;
+$clr-fonctshadowhover: #c3b4d4;
+
+@mixin flex-centercenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-centerstartcenter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-columnwrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@mixin background-button {
+    background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
+}
+@mixin background-coeur {
+    background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
+}
+@mixin hidden-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin positionsize-coeur {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.6em;
+}
+@mixin positionsize-coeur1 {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    font-size: 1.6em;
+}
 
 h1 {
     font-family: "Shrikhand";
@@ -44,9 +96,7 @@ a {
 header {
     .logo {
         height: 63px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-centercenter;
     }
 
     h1 {
@@ -65,12 +115,10 @@ main {
     .locate {
         background: #eaeaea;
         height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-centercenter;
 
         .fa-map-marker-alt {
-            color: #353535;
+            color: $clr-grey7;
         }
 
         p {
@@ -81,7 +129,7 @@ main {
     }
 
     .entete {
-        background: #f6f6f6;
+        background: $clr-grey3;
         max-width: 100%;
         text-align: center;
         padding: 45px 30px 56px 39px;
@@ -98,28 +146,26 @@ main {
 
         .button {
             font-size: 1em;
-            color: white;
+            color: $clr-white;
             font-weight: 550;
             padding: 15px;
             border-radius: 25px;
             cursor: pointer;
             border: none;
-            background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
-            box-shadow: 1px 1px 5px #979393;
+            @include background-button;
+            box-shadow: 1px 1px 5px $clr-grey4;
     
             &:hover {
                 opacity: 0.85;
-                box-shadow: 1px 3px 5px #979393;
+                box-shadow: 1px 3px 5px $clr-grey4;
             }
         }
     }
 
     .fonctionnement {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 100%;
+        @include flex-columnwrap;
         text-align: center;
+        max-width: 100%;
         padding: 52px 20px;
 
         h3 {
@@ -129,41 +175,36 @@ main {
         }
 
         .fonct {
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            flex-wrap: wrap;
-            max-width: 100%;
+            @include flex-columnwrap;
             text-align: center;
+            position: relative;
+            max-width: 100%;
     
             li {
                 font-weight: bolder;
             }
     
             &__1 {
-                display: flex;
-                max-width: 100%;
-                text-align: center;
+                @include flex-centerstartcenter;
                 height: 73px;
-                align-items: center;
-                justify-content: start;
+                max-width: 100%;
                 padding-left: 37px;
                 border: none;
-                background: #f6f6f6;
+                background: $clr-grey3;
                 border-radius: 25px 25px 25px 25px;
                 margin: 0 0 25px 13px;
                 cursor: pointer;
-                box-shadow: 1px 5px 10px #e8e8e8;
+                box-shadow: 1px 5px 10px $clr-grey2;
         
                 &:hover {
-                    background: #f5edff;
-                    box-shadow: 1px 5px 10px #c3b4d4;
+                    background: $clr-grey;
+                    box-shadow: 1px 5px 10px $clr-fonctshadowhover;
                 }
             }
     
             .fa-mobile-alt {
                 margin-right: 28px;
-                color: #7e7e7e;
+                color: $clr-grey5;
             }
         
             .fonct__1:hover > .fa-mobile-alt {
@@ -171,29 +212,26 @@ main {
             }
     
             &__2 {
-                display: flex;
+                @include flex-centerstartcenter;
                 max-width: 100%;
-                text-align: center;
                 height: 73px;
-                align-items: center;
-                justify-content: start;
                 padding-left: 37px;
                 border: none;
-                background: #f6f6f6;
+                background: $clr-grey3;
                 border-radius: 25px 25px 25px 25px;
                 margin: 0 0 25px 13px;
                 cursor: pointer;
-                box-shadow: 1px 5px 10px #e8e8e8;
+                box-shadow: 1px 5px 10px $clr-grey2;
         
                 &:hover {
-                    background: #f5edff;
-                    box-shadow: 1px 5px 10px #c3b4d4;
+                    background: $clr-grey;
+                    box-shadow: 1px 5px 10px $clr-fonctshadowhover;
                 }
             }
     
             .fa-list {
                 margin-right: 24px;
-                color: #7e7e7e;
+                color: $clr-grey5;
             }
         
             .fonct__2:hover > .fa-list {
@@ -201,29 +239,26 @@ main {
             }
         
             &__3 {
-                display: flex;
+                @include flex-centerstartcenter;
                 max-width: 100%;
-                text-align: center;
                 height: 73px;
-                align-items: center;
-                justify-content: start;
                 padding-left: 37px;
                 border: none;
-                background: #f6f6f6;
+                background: $clr-grey3;
                 border-radius: 25px 25px 25px 25px;
                 margin: 0 0 0 13px;
                 cursor: pointer;
-                box-shadow: 1px 5px 10px #e8e8e8;
+                box-shadow: 1px 5px 10px $clr-grey2;
         
                 &:hover {
-                    background: #f5edff;
-                    box-shadow: 1px 5px 10px #c3b4d4;
+                    background: $clr-grey;
+                    box-shadow: 1px 5px 10px $clr-fonctshadowhover;
                 }
             }
     
             .fa-store {
                 margin-right: 21px;
-                color: #7e7e7e;
+                color: $clr-grey5;
             }
         
             .fonct__3:hover > .fa-store {
@@ -231,14 +266,12 @@ main {
             }
     
             &__number {
-                display: flex;
+                @include flex-centercenter;
                 width: 26px;
                 height: 26px;
-                color: white;
-                align-items: center;
-                justify-content: center;
+                color: $clr-white;
                 border: 5px solid transparent;
-                border-radius: 50% 50% 50% 50%;
+                border-radius: 50%;
                 background: $clr-primary;
                 font-weight: 400;
                 position: absolute;
@@ -247,12 +280,12 @@ main {
         }
     }
 
-    .restaurants {
-        background: #f6f6f6;
+    .restaurant {
+        background: $clr-grey3;
         display: flex;
         flex-wrap: wrap;
-        position: relative;
         text-align: center;
+        position: relative;
         max-width: 100%;
         padding: 60px 20px 42px 20px;
 
@@ -269,10 +302,8 @@ main {
             font-size: 1.5em;
         }
 
-        .restaurant {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+        .restaurant__carte {
+            @include flex-columnwrap;
             max-width: 100%;
             margin-bottom: 18px;
     
@@ -287,11 +318,11 @@ main {
             }
         }
 
-        .restnew {
+        .restaurant__image {
             position: relative;
         }
     
-        .new {
+        .restaurant__vignette {
             position: absolute;
             top: 14px;
             right: 12px;
@@ -303,10 +334,10 @@ main {
             border-radius: 3px;
         }
     
-        .text {
+        .restaurant__text {
             position: relative;
             text-align: left;
-            background: white;
+            background: $clr-white;
             border-radius: 0 0 15px 15px;
     
             h4 {
@@ -321,22 +352,16 @@ main {
         }
     
         .coeurvide {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            font-size: 1.6em;
-            color: #4b4b4b;
+            @include positionsize-coeur;
+            color: $clr-grey6;
         }
     
         .coeurplein {
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            font-size: 1.6em;
+            @include positionsize-coeur;
             color: transparent;
             opacity: 0;
             transition: opacity 0.5s;
-            background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
+            @include background-coeur;
             background-clip: text;
         
             &:hover {
@@ -347,8 +372,8 @@ main {
 }
 
 footer {
-    background: #353535;
-    color:white;
+    background: $clr-grey7;
+    color:$clr-white;
     height: 197px;
 
     h1 {
@@ -366,7 +391,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: white;
+        color: $clr-white;
     }
 
     .fa-hands-helping {
@@ -383,7 +408,7 @@ footer {
 
 header {
     .fa-arrow-left {
-        color: #353535;
+        color: $clr-grey7;
         position: absolute;
         left: 23px;
         top: 25px;
@@ -393,8 +418,7 @@ header {
 
 main {
     .photorestaurant {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
 
         img {
             max-width: 100%;
@@ -405,11 +429,10 @@ main {
     }
 
     .menu {
-        display: flex;
+        @include flex-column;
         position: relative;
-        flex-direction: column;
         max-width: 100%;
-        background-color: #f6f6f6;
+        background-color: $clr-grey3;
         padding: 31px 15px 83px 15px;
         border-radius: 35px 35px 0 0;
         margin-top: -30px;
@@ -431,22 +454,16 @@ main {
         }
 
         .coeurvide1 {
-            position: absolute;
-            top: 38px;
-            right: 38px;
-            font-size: 1.6em;
-            color: #4b4b4b;
+            @include positionsize-coeur1;
+            color: $clr-grey6;
         }
 
         .coeurplein1 {
-            position: absolute;
-            top: 38px;
-            right: 38px;
-            font-size: 1.6em;
+            @include positionsize-coeur1;
             color: transparent;
             opacity: 0;
             transition: opacity 0.5s;
-            background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
+            @include background-coeur;
             background-clip: text;
         
             &:hover {
@@ -474,7 +491,7 @@ main {
             .carte {
                 display: flex;
                 justify-content: space-between;
-                background-color: white;
+                background-color: $clr-white;
                 border-radius: 15px;
                 margin-bottom: 14px;
                 cursor: pointer;
@@ -497,13 +514,11 @@ main {
                     white-space: nowrap;
         
                     p {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        @include hidden-ellipsis;
                     }
         
                     h3 {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        @include hidden-ellipsis;
                     }
                 }
 
@@ -545,11 +560,9 @@ main {
             
                 &__animation {
                     margin-right: -59px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-centercenter;
                     background-color: $clr-tertiary;
-                    color: #fff;
+                    color: $clr-white;
                     width: 59px;
                     min-height: 100%;
                     font-size: 1.3rem; 
@@ -576,15 +589,15 @@ main {
 
         .button2 {
             font-size: 1em;
-            color: white;
+            color: $clr-white;
             font-weight: 500;
             padding: 19px 49px;
             margin-top: 36px;
             border-radius: 35px;
             cursor: pointer;
             border: none;
-            background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
-            box-shadow: 1px 1px 5px #979393;
+            @include background-button;
+            box-shadow: 1px 1px 5px $clr-grey4;
     
             &__command {
                 text-align: center;
@@ -592,7 +605,7 @@ main {
     
             &:hover {
                 opacity: 0.85;
-                box-shadow: 1px 3px 5px #979393;
+                box-shadow: 1px 3px 5px $clr-grey4;
             }
         }
     }
