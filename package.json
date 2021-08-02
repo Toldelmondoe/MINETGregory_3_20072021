@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "sass --watch .main/dart-sass/sass/style.scss:.style.css"
+    "test": "sass --watch .main/dart-sass/sass/style.scss:.style/style.css"
   },
   "repository": {
     "type": "git",
