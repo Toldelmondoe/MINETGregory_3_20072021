@@ -1,0 +1,19 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass": "sass --watch .main/dart-sass/sass/style.scss:.style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toldelmondoe/MINETGregory_3_20072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toldelmondoe/MINETGregory_3_20072021/issues"
+  },
+  "homepage": "https://github.com/Toldelmondoe/MINETGregory_3_20072021#readme"
+}

@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.57em;
+  font-size: 1.5em;
 }
 
 h3 {
@@ -127,7 +127,8 @@ main .locate .fa-map-marker-alt {
 
 main .locate p {
   margin-left: 19px;
-  color: #353535;
+  color: #575757;
+  font-weight: 600;
 }
 
 main .entete {
@@ -138,9 +139,13 @@ main .entete {
 }
 
 main .entete p {
-  font-size: 1.05em;
+  font-size: 1.14em;
   font-weight: lighter;
   margin: 16px 0 32px 0;
+}
+
+main .entete h2 {
+  padding-left: 13px;
 }
 
 main .entete .button {

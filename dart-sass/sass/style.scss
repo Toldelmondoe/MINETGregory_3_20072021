@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.57em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -75,7 +75,8 @@ main {
 
         p {
             margin-left: 19px;
-            color: #353535;
+            color: #575757;
+            font-weight: 600;
         }
     }
 
@@ -86,9 +87,13 @@ main {
         padding: 45px 30px 56px 39px;
 
         p {
-            font-size: 1.05em;
+            font-size: 1.14em;
             font-weight: lighter;
             margin: 16px 0 32px 0;
+        }
+
+        h2 {
+            padding-left: 13px;
         }
 
         .button {
