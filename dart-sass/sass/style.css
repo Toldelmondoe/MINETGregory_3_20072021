@@ -150,7 +150,7 @@ main .entete h2 {
 
 main .entete .button {
   font-size: 1em;
-  color: #fff;
+  color: #c7b96d;
   font-weight: 550;
   padding: 15px;
   border-radius: 25px;
@@ -333,7 +333,7 @@ main .fonctionnement .fonct__number {
           justify-content: center;
   width: 26px;
   height: 26px;
-  color: #fff;
+  color: #c7b96d;
   border: 5px solid transparent;
   border-radius: 50%;
   background: #9356DC;
@@ -416,7 +416,7 @@ main .restaurant .restaurant__vignette {
 main .restaurant .restaurant__text {
   position: relative;
   text-align: left;
-  background: #fff;
+  background: #c7b96d;
   border-radius: 0 0 15px 15px;
 }
 
@@ -457,7 +457,7 @@ main .restaurant .coeurplein:hover {
 
 footer {
   background: #353535;
-  color: #fff;
+  color: #c7b96d;
   height: 197px;
 }
 
@@ -476,7 +476,7 @@ footer li {
 
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: #c7b96d;
 }
 
 footer .fa-hands-helping {
@@ -595,7 +595,7 @@ main .menu .cartemenu .carte {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
+  background-color: #c7b96d;
   border-radius: 15px;
   margin-bottom: 14px;
   cursor: pointer;
@@ -682,7 +682,7 @@ main .menu .cartemenu .carte__animation {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #99E2D0;
-  color: #fff;
+  color: #c7b96d;
   width: 59px;
   min-height: 100%;
   font-size: 1.3rem;
@@ -708,7 +708,7 @@ main .menu .cartemenu .carte__animation:hover i {
 
 main .menu .button2 {
   font-size: 1em;
-  color: #fff;
+  color: #c7b96d;
   font-weight: 500;
   padding: 19px 49px;
   margin-top: 36px;
