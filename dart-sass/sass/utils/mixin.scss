@@ -44,3 +44,12 @@
     right: 38px;
     font-size: 1.6em;
 }
+@mixin fonct {
+    height: 73px;
+    max-width: 100%;
+    padding-left: 37px;
+    border: none;
+    background: $clr-grey3;
+    border-radius: 25px;
+    cursor: pointer;
+}
