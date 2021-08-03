@@ -1,0 +1,46 @@
+@mixin flex-centercenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-centerstartcenter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-columnwrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@mixin button {
+    background: linear-gradient(170deg, $clr-secondary 4%, $clr-primary 100%);
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+@mixin background-coeur {
+    background-image: linear-gradient(10deg, $clr-secondary 4%, $clr-primary 100%);
+}
+@mixin hidden-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@mixin positionsize-coeur {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.6em;
+}
+@mixin positionsize-coeur1 {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    font-size: 1.6em;
+}
