@@ -1,0 +1,59 @@
+/*Responsive*/
+
+@media all and (min-width: 768px) {
+    main {
+        .entetefonctionnement {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+        .entete {
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            width: 45%; 
+            background-color: $clr-white;
+            padding: 45px 45px 45px 55px;
+            .button {
+                max-width: 210px;
+            }  
+        }
+        .fonctionnement {
+            width: 50%;
+            padding: 45px 0 45px 0;
+        } 
+        .restaurant {
+            border-radius: 25px 25px 0 0;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1440px;
+            margin: auto;
+            &__carte {
+                max-width: 49%;  
+            }
+            h3{
+                padding-right: 1000px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    main {
+        .menu {
+            max-width: 1440px;
+            margin: auto;
+        }
+        .carteresponsive {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .cartemenu {
+            width: 32.5%;
+        }
+    }
+}
