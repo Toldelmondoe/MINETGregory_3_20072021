@@ -711,26 +711,7 @@ footer .fa-utensils {
 
 /*Responsive*/
 @media all and (min-width: 768px) {
-  .entetefonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  .entete {
-    width: 30%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #fff;
-  }
-  .fonctionnement {
-    width: 40%;
-  }
-  .fonct {
+  main .entetefonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -741,7 +722,74 @@ footer .fa-utensils {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 95%;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  main .entete {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45%;
+    background-color: #fff;
+    padding: 45px 45px 45px 55px;
+  }
+  main .entete .button {
+    max-width: 210px;
+  }
+  main .fonctionnement {
+    width: 50%;
+    padding: 45px 0 45px 0;
+  }
+  main .restaurant {
+    border-radius: 25px 25px 0 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+  }
+  main .restaurant__carte {
+    max-width: 49%;
+  }
+  main .restaurant h3 {
+    padding-right: 1000px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  main .menu {
+    max-width: 1440px;
+    margin: auto;
+  }
+  main .carteresponsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .cartemenu {
+    width: 32.5%;
   }
 }
 
@@ -781,7 +829,6 @@ main .menu {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  max-width: 100%;
   background-color: #f6f6f6;
   padding: 31px 15px 83px 15px;
   border-radius: 35px 35px 0 0;
