@@ -149,14 +149,14 @@ main .entete h2 {
 }
 
 main .entete .button {
+  background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   font-size: 1em;
-  color: #fff;
   font-weight: 550;
-  padding: 15px;
-  border-radius: 25px;
   cursor: pointer;
   border: none;
-  background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
+  color: #fff;
+  padding: 15px;
+  border-radius: 25px;
   -webkit-box-shadow: 1px 1px 5px #979393;
           box-shadow: 1px 1px 5px #979393;
 }
@@ -370,7 +370,7 @@ main .restaurant h3 {
   font-size: 1.5em;
 }
 
-main .restaurant .restaurant__carte {
+main .restaurant__carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +384,7 @@ main .restaurant .restaurant__carte {
   margin-bottom: 18px;
 }
 
-main .restaurant .restaurant__carte img {
+main .restaurant__carte img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,11 +397,11 @@ main .restaurant .restaurant__carte img {
   border-radius: 15px 15px 0 0;
 }
 
-main .restaurant .restaurant__image {
+main .restaurant__image {
   position: relative;
 }
 
-main .restaurant .restaurant__vignette {
+main .restaurant__vignette {
   position: absolute;
   top: 14px;
   right: 12px;
@@ -413,18 +413,18 @@ main .restaurant .restaurant__vignette {
   border-radius: 3px;
 }
 
-main .restaurant .restaurant__text {
+main .restaurant__text {
   position: relative;
   text-align: left;
   background: #fff;
   border-radius: 0 0 15px 15px;
 }
 
-main .restaurant .restaurant__text h4 {
+main .restaurant__text h4 {
   padding: 17px 0 6px 14px;
 }
 
-main .restaurant .restaurant__text p {
+main .restaurant__text p {
   font-size: 1.06rem;
   font-weight: lighter;
   padding: 0px 0px 17px 14px;
@@ -443,12 +443,12 @@ main .restaurant .coeurplein {
   top: 25px;
   right: 25px;
   font-size: 1.6em;
+  background-image: linear-gradient(10deg, #FF79DA 4%, #9356DC 100%);
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  background-image: linear-gradient(10deg, #FF79DA 4%, #9356DC 100%);
-  background-clip: text;
 }
 
 main .restaurant .coeurplein:hover {
@@ -561,12 +561,12 @@ main .menu .coeurplein1 {
   top: 38px;
   right: 38px;
   font-size: 1.6em;
+  background-image: linear-gradient(10deg, #FF79DA 4%, #9356DC 100%);
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  background-image: linear-gradient(10deg, #FF79DA 4%, #9356DC 100%);
-  background-clip: text;
 }
 
 main .menu .coeurplein1:hover {
@@ -646,7 +646,7 @@ main .menu .cartemenu .carte__prix p {
   font-weight: bold;
 }
 
-main .menu .cartemenu .carte:hover .carte__animation {
+main .menu .cartemenu .carte:hover .carte--animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
@@ -657,7 +657,7 @@ main .menu .cartemenu .carte:hover i {
           transform: rotate(-360deg);
 }
 
-main .menu .cartemenu .carte:hover:hover .carte__animation {
+main .menu .cartemenu .carte:hover:hover .carte--animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
@@ -670,7 +670,7 @@ main .menu .cartemenu .carte:hover:hover i {
   transition: 0.35s ease-out;
 }
 
-main .menu .cartemenu .carte__animation {
+main .menu .cartemenu .carte--animation {
   margin-right: -59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,18 +688,18 @@ main .menu .cartemenu .carte__animation {
   font-size: 1.3rem;
 }
 
-main .menu .cartemenu .carte__animation i {
+main .menu .cartemenu .carte--animation i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
-main .menu .cartemenu .carte__animation:hover .carte__animation {
+main .menu .cartemenu .carte--animation:hover .carte--animation {
   margin-right: 0;
   -webkit-transition: 0.35s ease-out;
   transition: 0.35s ease-out;
 }
 
-main .menu .cartemenu .carte__animation:hover i {
+main .menu .cartemenu .carte--animation:hover i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: 0.35s ease-out;
@@ -707,15 +707,15 @@ main .menu .cartemenu .carte__animation:hover i {
 }
 
 main .menu .button2 {
+  background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   font-size: 1em;
+  font-weight: 550;
+  cursor: pointer;
+  border: none;
   color: #fff;
-  font-weight: 500;
   padding: 19px 49px;
   margin-top: 36px;
   border-radius: 35px;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(170deg, #FF79DA 4%, #9356DC 100%);
   -webkit-box-shadow: 1px 1px 5px #979393;
           box-shadow: 1px 1px 5px #979393;
 }
