@@ -48,6 +48,7 @@ Header<br>
 ● Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil<br>
 
 Effets graphiques et animations<br>
+
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS, pas de JavaScript ni de librairie.<br>
 
 Boutons<br>
@@ -63,6 +64,7 @@ Pages de menu<br>
 ● Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension. Un exemple de l’effet attendu est fourni.<br>
 
 Compétences évaluées<br>
+
 -Mettre en place une structure de navigation pour un site web<br>
 -Mettre en œuvre des effets CSS graphiques avancés<br>
 -Assurer la cohérence graphique d'un site web<br>
