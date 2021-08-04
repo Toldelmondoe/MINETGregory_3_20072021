@@ -28,21 +28,17 @@ $clr-fonctshadowhover: #c3b4d4;
         overflow: auto;
     }
 }
-
 @keyframes map-appearance {
     0% {
         opacity: 0;
     }
-
     50% {
         opacity: 0.7;
     }
-
     100% {
         opacity: 1;
     }
 }
-
 @keyframes degrad {
     0% {
         background-position: 0% 50%;
@@ -64,7 +60,6 @@ $clr-fonctshadowhover: #c3b4d4;
         background-position: 0% 50%;
     }
 }
-
 @keyframes loader {
     0% {
         opacity: 1;   
@@ -77,7 +72,6 @@ $clr-fonctshadowhover: #c3b4d4;
         z-index: -1;
     }
 }
-
 @keyframes flip {
     0% {
             transform: perspective(400px) rotateY(0);
@@ -165,35 +159,27 @@ h1 {
     font-family: "Shrikhand";
     font-weight: 500;
 }
-
 h2, h3, h4, h5, h6, p, a, i, li, strong, span {
     font-family: "Roboto";
 }
-
 h2, h3, h4, h5, h6 {
     font-weight: bolder;
 }
-
 h1 {
     font-size: 1.75em;
 }
-
 h2 {
     font-size: 1.5em;
 }
-
 h3 {
     font-size: 1.08em;
 }
-
 h4 {
     font-size: 1.1em;
 }
-
 span {
     font-size: 1em;
 }
-
 a {
     text-decoration: none;
 }
@@ -204,7 +190,6 @@ a {
     animation: appearance-body .01s 3s both;
     width: auto;
     height: auto;
-    
     .loadingspinner {
         @include flex-centercenter;
         width: 100%;
@@ -214,7 +199,6 @@ a {
         animation: loader .01s 3s both;
         z-index: 1;
     }  
-    
     .load {
         font-family: "Shrikhand";
         font-size: 3rem;
@@ -234,7 +218,6 @@ header {
         height: 63px;
         @include flex-centercenter;
     }
-
     h1 {
         font-size: 1.8em;
     }
@@ -632,20 +615,16 @@ footer {
     background: $clr-grey7;
     color:$clr-white;
     height: 197px;
-
     h1 {
         padding: 20px 0 0 25px;
         font-size: 20px;
     }
-
     ul {
         padding: 15px 0 0 20px;
     }
-
     li {
         padding-bottom: 8px;
     }
-
     a {
         text-decoration: none;
         color: $clr-white;
@@ -653,12 +632,10 @@ footer {
             text-decoration: underline;
         }
     }
-
     .fa-hands-helping {
         font-size: 11px;
         margin-right: 12px;
     }
-
     .fa-utensils {
         margin-right: 12px;
     }
@@ -706,7 +683,6 @@ footer {
         }
     }
 }
-
 @media all and (min-width: 1024px) {
     main {
         .menu {
